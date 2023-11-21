@@ -673,3 +673,8 @@ section {
       padding: 0 20px;
   }
 } 
+@media screen and (max-width: 768px) {
+  #info-box, #info-box-work1 .experience-sub-title {
+      max-width: 100%; /* Adjust the maximum width for smaller screens */
+  }
+}
