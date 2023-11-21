@@ -610,4 +610,66 @@ body.light-mode .logo {
 /* Dark mode styles */
 body.dark-mode .logo {
     color: white;
+} 
+/* Common Styles for Information Boxes */
+#info-box-work1{
+    background-color: #ffffff; /* Light mode background color */
+    color: #333333; /* Light mode text color */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    margin: 1rem 0;
 }
+
+/* Dark mode styles for Information Boxes */
+body.dark-mode #info-box-work1,
+body.dark-mode #info-box-work2 {
+    background-color:black; /* Dark mode background color */
+    color: #ffffff; /* Dark mode text color */
+} 
+
+/* Dark mode styles for Toggle Mode button */
+body.dark-mode #darkModeToggle {
+  color: black; /* Set the color to black in dark mode */
+}
+body.dark-mode #info-box button {
+  color: black; /* Set the color to black in dark mode */
+} 
+.section-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* General styling for sections */
+section {
+  margin: 0 auto;
+  max-width: 800px; /* Adjust the max-width based on your design */
+}
+
+/* Adjust the layout for smaller screens */
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  #contact .title {
+    /* Adjust specific sections as needed*/
+    margin-top: 20px; 
+  } 
+  .details-container{
+    margin-bottom: 30px;
+  }
+}
+.details-container{
+  margin-bottom: 30px;
+}
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  body #contact h1.title {
+      font-size: 1.5rem; /* Adjust the font size further for smaller screens if needed */
+  }
+
+  body #contact .frm {
+      padding: 0 20px;
+  }
+} 
